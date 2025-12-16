@@ -1,0 +1,128 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Descubre todo sobre thor: características, comics, creadores y más.">
+  <meta name="keywords" content="dios del tueno,thor">
+  <meta name="author" content="Vera_Pulido_Donovan_Michel">
+  <title>THOR</title>
+  <link rel="stylesheet" href="THOR.css">
+</head>
+<body>
+  <header class="main-header">
+    <nav class="nav">
+      <a href="to.html" class="nav__logo" aria-label="Regresar a la página principal">COMICS MÁS POPULARES</a>
+      <ul class="nav__list">
+        <li><a href="index.html" class="nav__link">INICIO</a></li>
+        <li><a href="https://www.marvel.com/characters/thor-thor-odinson" class="nav__link" target="_blank" rel="noopener">THOR OFICIAL</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero__content">
+      <h1 class="hero__title">THOR</h1>
+      <p class="hero__description">dios del trueno</p>
+      <a href="https://www.marvel.com/characters/thor-thor-odinson" class="btn btn--primary" target="_blank" rel="noopener">saber más</a>
+    </div>
+  </section>
+
+  <section class="gallery">
+    <h2 class="section-title">Actores de THOR en el UCM</h2>
+    <div class="gallery__grid">
+      <img src="https://media.cnn.com/api/v1/images/stellar/prod/cnne-1685881-220713135516-03-thor-love-and-thunder.jpg?c=original" alt="thor" loading="lazy" class="gallery__img">
+      <img src="https://wallpapers.com/images/featured/thor-qzytdg8xliuaelun.jpg" alt="thor" loading="lazy" class="gallery__img">
+      <img src="https://fotografias-neox.atresmedia.com/clipping/cmsimages01/2016/05/16/E2D7D74A-5914-46A3-902A-20A863171856/70.jpg?crop=1200,675,x0,y62&width=480&height=270&optimize=high&format=webply" alt="thor"loading="lazy" class="gallery__img">
+
+    </div>
+  </section>
+
+<section class="video-section">
+  <h2 class="section-title">cosas que no sabias de Thor</h2>
+  <div class="video-container">
+  <iframe width="865" height="487" src="https://www.youtube.com/embed/5c2te4CioDk" title="15 cosas que no sabias de Thor" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  </div>
+  <p class="video-description">Algunas cosas sobre </p>
+</section>
+
+  <section class="performance">
+    <h2 class="section-title">primera aparición</h2>
+    <div class="performance__legend">
+      <span>THOR<span class="legend-dot legend-dot--cap"></span></span>
+    </div>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyQB7eo3qWhFVnPFCCpJGwlbxwoOQwauMhRQ&s" alt="THOR" loading="lazy" class="gallery__img" style="width: 200px; height: auto; border-radius: 1rem;">
+    <div class="performance__metrics tho-intro">
+      <h2>la primera aparicion 🌩️ </h2>
+      <p>Thor Odinson es el Dios del Trueno de Asgard, creado por Stan Lee, Larry Lieber y Jack Kirby. Debutó en Journey into Mystery #83 (1962). Castigado por Odin, aprende humildad en la Tierra y recupera su poder al empuñar Mjölnir, el martillo que solo los dignos pueden levantar. Con el poder del rayo y el trueno, Thor protege ambos mundos de amenazas divinas y cósmicas.</p>
+    </div>
+  </section>
+
+  <section class="CREADORES">
+    <h2 class="section-title">CREADORES DEL PERSONAJE</h2>
+    <div class="creadores__list">
+      <div class="creador">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/7/7b/Stan_Lee_by_Gage_Skidmore_3.jpg" alt="Avatar de usuario " class="creador__avatar" loading="lazy">
+        <blockquote class="creador__text">Ideó el concepto del héroe y definió su personalidad y rol dentro del Universo Marvel.</blockquote>
+        <cite class="creador__author">Stan Lee</cite>
+      </div>
+ <div class="creador">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/3/3a/Larry-Lieber_-2012.jpg" alt="Avatar de usuario " class="creador__avatar" loading="lazy">
+        <blockquote class="creador__text">Escribió la historia de su primera aparición y desarrolló su origen en los cómics.</blockquote>
+        <cite class="creador__author">Larry Lieber</cite>
+      </div>
+  </section>
+  <section class="cta-section">
+    <a href="https://www.marvel.com/characters/thor-thor-odinson" class="btn btn--secondary" target="_blank" rel="noopener">Ir a thor </a>
+  </section>
+
+  <footer class="main-footer">
+    <p>&copy; 2025 @michelvera. Todos los derechos reservados.</p>
+    <a href="index.html" class="footer__back" aria-label="Regresar a la página principal">Volver al inicio</a>
+  </footer>
+
+<script>
+  function createSnowflakes() {
+    const snowContainer = document.createElement('div');
+    snowContainer.className = 'snow-container';
+
+    const header = document.querySelector('.main-header');
+    header.style.position = 'relative';
+    header.appendChild(snowContainer.cloneNode(true));
+
+    const hero = document.querySelector('.hero');
+    hero.style.position = 'relative';
+    hero.appendChild(snowContainer.cloneNode(true));
+
+    const shapes = ['🔨', '⚡','🌩️',]; 
+
+    const containers = document.querySelectorAll('.snow-container');
+    containers.forEach(container => {
+      const confettiCount = Math.floor(Math.random() * 20) + 40;
+      for (let i = 0; i < confettiCount; i++) {
+        const confetti = document.createElement('div');
+        confetti.className = 'snowflake';
+
+        const randomShape = shapes[Math.floor(Math.random() * shapes.length)];
+        confetti.innerHTML = randomShape;
+        confetti.style.fontSize = `${(Math.random() * 1) + 0.8}em`;
+        confetti.style.color = '#000';
+
+        confetti.style.left = `${Math.random() * 100}%`;
+        confetti.style.opacity = (Math.random() * 0.7) + 0.3;
+        const animationDuration = (Math.random() * 4) + 2;
+        confetti.style.animationDuration = `${animationDuration}s`;
+        confetti.style.animationDelay = `${Math.random() * 3}s`;
+        const initialRotation = Math.floor(Math.random() * 360);
+        confetti.style.transform = `rotate(${initialRotation}deg)`;
+
+        container.appendChild(confetti);
+      }
+    });
+  }
+
+  document.addEventListener('DOMContentLoaded', createSnowflakes);
+</script>
+</body>
+</html>
